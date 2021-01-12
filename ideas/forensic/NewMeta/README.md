@@ -24,7 +24,13 @@
 - [mem.7z_link](deploy/mem.7z_link)
 
 ### Idea
-    We have two files: network dump and memory dump. From memory dump we need the key for traffic encryption. In network dump we can find encrypted traffic of windows kernel debug process. In memory dump we can found the WinDBG process wich do this debug. Flag is located on second machine and we dont have memory dump from this machine or other information. We can explore only traffic of debug.
+    We have two files: network dump and memory dump. 
+    From memory dump we need the key for traffic encryption. 
+    In network dump we can find encrypted traffic of windows kernel debug process. 
+    In memory dump we can found the WinDBG process wich do this debug. 
+    Flag is located on second machine and we dont have memory dump from this machine or other information. 
+    We can explore only traffic of debug.
+    
 ### Solution
     1. vol.py -f mem.raw --profile=Win10x64_19041 memdump -D . -p 5440
     2. find image in memory (gimp)
