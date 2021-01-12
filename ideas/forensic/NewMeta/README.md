@@ -21,7 +21,7 @@
 ### Files
 
 - [traf.7z_link](deploy/traf.7z_link)
-- [mem.7z_link](deploy/memdump.7z_link)
+- [mem.7z_link](deploy/mem.7z_link)
 
 ### Idea
     We have two files: network dump and memory dump. From memory dump we need the key for traffic encryption. In network dump we can find encrypted traffic of windows kernel debug process. In memory dump we can found the WinDBG process wich do this debug. Flag is located on second machine and we dont have memory dump from this machine or other information. We can explore only traffic of debug.
@@ -39,7 +39,7 @@
     11. locate all "write" commands in traffic and get correct keys for XOR
     12. decode flag
 
-- [solution with pictures](solve/solution.pdf)
+   [solution with pictures](solve/solution.pdf)
 ### Flag
 
 `Aero{f7301b4efb72fc507c5a9a0053077de1}`
