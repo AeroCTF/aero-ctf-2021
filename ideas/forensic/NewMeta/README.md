@@ -39,7 +39,7 @@
     11. locate all "write" commands in traffic and get correct keys for XOR
     12. decode flag
 
-    [solution with pictures](solve/solution.pdf)
+- [solution with pictures](solve/solution.pdf)
 ### Flag
 
 `Aero{f7301b4efb72fc507c5a9a0053077de1}`
