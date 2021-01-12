@@ -35,7 +35,7 @@
     7. we find the list of kernel modules and see the test driver there
     8. we get the module address and find where this address was used for reading
     9. parse traffic and get module binary
-    10. цe study the module a little and see a simple encoding algorithm, but it does not work, because the keys in memory are not correct, but were loaded through the debugger using the memory write command
+    10. we study the module a little and see a simple encoding algorithm, but it does not work, because the keys in memory are not correct, but were loaded through the debugger using the memory write command
     11. locate all "write" commands in traffic and get correct keys for XOR
     12. decode flag
 
