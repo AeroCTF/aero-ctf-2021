@@ -122,6 +122,8 @@ unsigned short Susart_Write_Loop(char send, char receive) org 32156 {
   goto LBL_BOOT18_32_01;
 }
 
+unsigned short wbf = 0;
+
 //-------------- This void will recover the bootlocation 0x0000, 0x0001 and
 //               0x0002 to point to the bootloaer's main. It will also move
 //               the reset vector of the program that is uploaded to a new
@@ -134,6 +136,7 @@ void Write_Begin() org 32336 {
   block[1] = 0xEF;
   block[2] = 0x3C;
   block[3] = 0xF0;
+  wbf = 1;
 }
 
 //-------------- Starts with bootload
@@ -145,7 +148,7 @@ void Start_Bootload() org 31504 {
   while (1) {
     if (i == 64u) {
       //--- If 32 words (64 bytes) recieved then write to flash
-      if (!j)
+      if (!wbf)
         Write_Begin();
       Flash_Write_Sector(j, block);
 
@@ -161,6 +164,7 @@ void Start_Bootload() org 31504 {
     if(cc == 0x52){
           Start_Program();
     }
+    j += cc*0x40;
     //--- Ask for yy
     Susart_Write('y');
     while (!Susart_Data_Ready()) ;

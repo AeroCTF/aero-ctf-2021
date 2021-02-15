@@ -182,6 +182,8 @@ _Write_Begin:
 	MOVWF       boot18_32K_block+2 
 	MOVLW       240
 	MOVWF       boot18_32K_block+3 
+	MOVLW       1
+	MOVWF       _wbf+0 
 L_end_Write_Begin:
 	RETURN      0
 ; end of _Write_Begin
@@ -199,10 +201,7 @@ L_Start_Bootload11:
 	XORLW       64
 	BTFSS       STATUS+0, 2 
 	GOTO        L_Start_Bootload13
-	MOVF        Start_Bootload_j_L0+0, 0 
-	IORWF       Start_Bootload_j_L0+1, 0 
-	IORWF       Start_Bootload_j_L0+2, 0 
-	IORWF       Start_Bootload_j_L0+3, 0 
+	MOVF        _wbf+0, 1 
 	BTFSS       STATUS+0, 2 
 	GOTO        L_Start_Bootload14
 	CALL        32336, 0
@@ -247,6 +246,21 @@ L_Start_Bootload16:
 	GOTO        L_Start_Bootload17
 	CALL        32704, 0
 L_Start_Bootload17:
+	MOVLW       64
+	MULWF       Start_Bootload_cc_L0+0 
+	MOVF        PRODL+0, 0 
+	MOVWF       R0 
+	MOVF        PRODH+0, 0 
+	MOVWF       R1 
+	MOVF        R0, 0 
+	ADDWF       Start_Bootload_j_L0+0, 1 
+	MOVF        R1, 0 
+	ADDWFC      Start_Bootload_j_L0+1, 1 
+	MOVLW       0
+	BTFSC       R1, 7 
+	MOVLW       255
+	ADDWFC      Start_Bootload_j_L0+2, 1 
+	ADDWFC      Start_Bootload_j_L0+3, 1 
 	MOVLW       121
 	MOVWF       FARG_Susart_Write_data_+0 
 	CALL        32420, 0

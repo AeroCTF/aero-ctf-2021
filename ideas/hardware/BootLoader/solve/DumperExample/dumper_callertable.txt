@@ -1,0 +1,5 @@
+main
+	__CC2DW
+	foo
+		UART1_Init
+		UART1_Write
