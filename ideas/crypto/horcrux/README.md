@@ -13,6 +13,8 @@
 
 ## Solution
 
+The idea is based on paper [https://eprint.iacr.org/2007/099.pdf](https://eprint.iacr.org/2007/099.pdf), but I've changed it a bit.
+
 TL;DR
 
 Let 
