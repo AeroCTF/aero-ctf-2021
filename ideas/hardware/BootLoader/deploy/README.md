@@ -1,11 +1,11 @@
-### Install
+## Install
 
-#####Initially compile using the standard script for gui version:
+###Initially compile using the standard script for gui version:
 - git clone https://github.com/lcgamboa/picsimlab.git
 - cd picsimlab
 - ./picsimlab_build_all_and_deps.sh exp
 
-#####after compilation:
+###after compilation:
 - cd ..
 - git clone https://github.com/lcgamboa/lxrad_NOGUI.git
 - cd lxrad_NOGUI/
