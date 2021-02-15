@@ -1,0 +1,14 @@
+main
+	Susart_Init
+	Susart_Write_Loop
+		___Boot_Delay32k
+		Susart_Write
+		Susart_Read
+	Start_Bootload
+		Write_Begin
+			Flash_Write_Sector
+		Flash_Write_Sector
+		Susart_Write
+		Susart_Data_Ready
+		Susart_Read
+	Start_Program

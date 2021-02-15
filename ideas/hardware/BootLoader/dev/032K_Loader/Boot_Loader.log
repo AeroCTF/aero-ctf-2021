@@ -1,0 +1,13 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F4520 -C -Y -DL -O11111100 -fo8 -N"C:\Users\anon\Documents\MikroC\MikroElektronika_RS-232_Bootloader\P18\032K\Boot_Loader.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" -SP"C:\Users\anon\Documents\MikroC\MikroElektronika_RS-232_Bootloader\P18\032K\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" "boot18_32K.c" "Boot_Loader.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_FLASH_w32_e64.mcl"	 
+hint: 0	1139	Available RAM: 1515 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	boot18_32K.c
+diagnostics: 180	123	Compiled Successfully	boot18_32K.c
+diagnostics: 0	122	Compilation Started	Boot_Loader.c
+diagnostics: 66	123	Compiled Successfully	Boot_Loader.c
+diagnostics: 0	127	All files Compiled in 110 ms	 
+hint: 0	1144	Used RAM (bytes): 82 (5%)  Free RAM (bytes): 1433 (95%)	Used RAM (bytes): 82 (5%)  Free RAM (bytes): 1433 (95%)
+hint: 0	1144	Used ROM (bytes): 526 (2%)  Free ROM (bytes): 32242 (98%)	Used ROM (bytes): 526 (2%)  Free ROM (bytes): 32242 (98%)
+diagnostics: 0	125	Project Linked Successfully	Boot_Loader.mcppi
+diagnostics: 0	128	Linked in 31 ms	 
+diagnostics: 0	129	Project 'Boot_Loader.mcppi' completed: 156 ms	 
+diagnostics: 0	103	Finished successfully: 15 Feb 2021, 08:48:35	Boot_Loader.mcppi
