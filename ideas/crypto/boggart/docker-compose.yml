@@ -1,0 +1,16 @@
+version: '2.2'
+
+services:
+  boggart:
+    build: service
+    restart: on-failure
+    ports:
+      - 17101:31337
+    stop_grace_period: 3s
+    mem_limit: 256M
+    memswap_limit: 256M
+    pids_limit: 1024
+    ulimits: 
+      nofile:
+        soft: 8192
+        hard: 8192
