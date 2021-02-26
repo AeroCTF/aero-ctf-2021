@@ -1,0 +1,17 @@
+version: '2.3'
+
+services:
+
+  task:
+    container_name: shellmaster
+    image: shellmaster_image
+
+    build: service
+    restart: always
+    ports:
+      - 17173:31337
+    pids_limit: 128
+    mem_limit: 128M
+    privileged: true
+    volumes:
+      - ./service/nsjail/logs/:/var/log/nsjail/
