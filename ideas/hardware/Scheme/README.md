@@ -22,5 +22,4 @@
     6. At F12 you need to calculate NE555 at monostable mode
 
 ### Flag
-`I think it`
 `Aero{ce294h6a24c245}`
