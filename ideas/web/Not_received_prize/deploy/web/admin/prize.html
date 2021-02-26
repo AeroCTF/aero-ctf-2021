@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>[prize] Graveyard feedback form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/uikit.min.css" />
+  <script type='text/javascript' src="/js/uikit.min.js"></script>
+  <script type='text/javascript' src="/js/uikit-icons.min.js"></script>
+  <script type='text/javascript' src="/js/lodash.min.js"></script>
+  <script type='text/javascript' src="/js/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="uk-section-default uk-position-relative uk-light" uk-scrollspy="{&quot;target&quot;:&quot;[uk-scrollspy-class]&quot;,&quot;cls&quot;:&quot;uk-animation-slide-bottom-small&quot;,&quot;delay&quot;:false}">
+    <div style="background-image: url('/img/bg.jpg'); background-color: #fff;" class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+      <div class="uk-position-cover" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+      <div class="uk-width-1-1">
+        <div class="uk-container uk-position-relative">
+          <div class="uk-margin" uk-grid>
+            <div class="uk-width-1-1@m">
+              <h1 class="uk-margin-medium uk-text-center uk-h1" uk-scrollspy-class>Prize</h1>
+            </div>
+            <div class="uk-flex-center uk-text-center uk-width-1-1 uk-first-column" uk-scrollspy-nav="closest: div; scroll: true; offset: 100">
+              <div class="uk-margin uk-align-center">
+                <p>To avoid accidental display, solve an example: <div uk-spinner id='spiner1'></div><span id='ex'></span></p>
+              </div>
+              <div class="uk-margin uk-align-center">
+                <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="icon: question"></span>
+                  <input class="uk-input uk-form-width-medium" id="solve">
+                </div>
+              </div>
+              <button class="uk-button uk-button-default uk-form-width-medium" id='btn'>
+                <div uk-spinner style="display: none;" id='spiner2'></div>Send
+              </button>
+              <img src='' id='priz' style="display: none;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page#-1" class="uk-section-secondary uk-section-small uk-section" uk-height-viewport="expand: true" style="box-sizing: border-box;">
+    <div class="uk-container">
+      <div class="uk-grid-large uk-grid-margin-large uk-grid" uk-grid>
+        <div class="uk-text-meta" uk-scrollspy-class>
+          <a href="/">AeroCTF</a>© 2021 <br class="uk-visible@s"><span uk-icon="icon: telegram"></span> @Z_MIR1.
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/admin/prize.js"></script>
+</body>
+
+</html>

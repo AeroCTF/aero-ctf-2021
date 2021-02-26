@@ -1,0 +1,17 @@
+# Python cache
+*.py[cod]
+__pycache__
+env
+
+# PgDatabase
+docker/pgdata
+
+# TgState
+docker/tgdata
+
+# Celery beat shedule
+celerybeat-schedule
+
+# IDE
+.vscode
+.idea

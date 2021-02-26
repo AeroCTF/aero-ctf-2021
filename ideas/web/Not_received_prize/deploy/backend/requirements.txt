@@ -1,0 +1,11 @@
+Flask
+gunicorn
+SQLAlchemy
+flask-cors
+psycopg2
+celery
+Flask-SQLAlchemy
+paramiko
+requests
+celery
+redis

@@ -1,0 +1,1 @@
+setTimeout(() => { document.location.href = '/admin/index.html' }, 1000);
