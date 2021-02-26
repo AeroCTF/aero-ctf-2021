@@ -60,7 +60,7 @@ def _addHelpMsg():
         addHelpMsg.sha = sha256(f'CTF_{addHelpMsg.row_id}_2021'.encode('utf-8')).hexdigest()
         sa.session.commit()
 
-        celery.send_task('tasks.adminRead', (addHelpMsg.row_id,))
+        celery.send_task('tasks.adminRead', (addHelpMsg.sha,))
         return jsonify({'status': 'Thanks for your feedback!', 'id':addHelpMsg.sha})
     except IntegrityError as err:
         sa.session.rollback()

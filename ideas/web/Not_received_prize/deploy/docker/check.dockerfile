@@ -33,4 +33,6 @@ RUN pip install -r ./requirements.txt
 RUN chmod +x ./run.sh            
 RUN chmod +x ./main.py
 
+USER nobody
+
 CMD ["./run.sh"]

@@ -3,7 +3,6 @@ btn.onclick = () => {
   const spiner = document.getElementById('spiner')
 
   const name = document.getElementById('name')
-  const team_token = document.getElementById('team_token')
   const msg = document.getElementById('msg')
   const captch = document.getElementById('g-recaptcha-response')
 
@@ -13,7 +12,6 @@ btn.onclick = () => {
 
   axios.post('/api/help/add', {
       name: _.escape(name.value),
-      team_token: _.escape(team_token.value),
       msg: _.escape(msg.value),
       captch: _.escape(captch.value)
     })
@@ -32,7 +30,7 @@ btn.onclick = () => {
           message: `${result.data.status || ''}<br><a href="/help/read.html?id=${result.data.id || ''}">View</a>`,
           status: 'primary',
           pos: 'top-center',
-          timeout: 5000
+          timeout: 7000
         });
 
       }
