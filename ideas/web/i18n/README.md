@@ -5,7 +5,7 @@
 ### Description
 
 > We made a little cafe for all the ctfers to relax after the competition. 
-> It is available in russian and english.
+> The website is available in russian and english.
 >
 > Try to find the flag somewhere in /
 >
