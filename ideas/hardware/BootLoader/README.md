@@ -6,9 +6,6 @@
 > I use this .hex to load firmware into my new PIC18F452 (OSC 8MHz)
 > But unfourtunately I lost it.
 
-> Thanks to Luis Claudio Gambôa Lopes for his help with dev this task.
-> https://github.com/lcgamboa/picsimlab
-
 ### Files
 - [BootLoader.hex](deploy/Boot_Loader.hex)
 

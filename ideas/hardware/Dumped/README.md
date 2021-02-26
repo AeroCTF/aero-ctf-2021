@@ -5,9 +5,6 @@
 ### Description
 > It was the great program...
 
-> Thanks to Luis Claudio Gambôa Lopes for his help with dev this task.
-> https://github.com/lcgamboa/picsimlab
-
 ### Files
 - Nope 
 
