@@ -5,6 +5,7 @@ from web import celery
 import requests
 from web.models.flask import sa
 import web.models.flask  as db
+import re
 
 from sqlalchemy.exc import IntegrityError
 
@@ -48,6 +49,9 @@ def _addHelpMsg():
     msg = data.get('msg', None)
     if not msg:
         return jsonify({'error': 'Unknown param msg'})
+
+    regex = r"<[^<>]*?>"
+    msg = re.sub(regex, '', msg, 0, re.IGNORECASE | re.MULTILINE)
 
 
     addHelpMsg = db.HelpMsg(name=name, msg=msg)

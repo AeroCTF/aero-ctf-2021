@@ -15,7 +15,7 @@
     A site with poor filtering from XSS, through the backconnect vulnerability we send to the local admin panel, to the page with a flag (but redirecting how to view it, you need to solve an example) 
     
 ### Solution
-    1. Send <script/src="https://www.google.com/complete/search?client=chrome&jsonp={p}"></script>, Where p - payload
+    1. Send <scri<>pt/src="https://www.google.com/complete/search?client=chrome&jsonp={p}"></sc<>ript>, Where p - payload
     2. Get the source code of the page through the backconnect image 
     3. Find a link to receive a prize 
     4. Get the source code of the prize page
