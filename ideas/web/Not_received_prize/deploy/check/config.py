@@ -6,10 +6,10 @@ class Config:
 
     REDIS_URL: str = 'redis://redis:6379/0'
     
-    CELERY_RESULT_BACKEND: str        = REDIS_URL
-    BROKER_URL: str                   = REDIS_URL
-    CELERY_SEND_TASK_SENT_EVENT: bool = True
-    CELERY_TIMEZONE: str              = 'Europe/Moscow'
+    result_backend: str        = REDIS_URL
+    broker_url: str                   = REDIS_URL
+    task_send_sent_event: bool = True
+    timezone: str              = 'Europe/Moscow'
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
