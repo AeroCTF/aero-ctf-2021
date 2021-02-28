@@ -1,0 +1,12 @@
+version: '2.2'
+
+services:
+  netfs:
+    build: service
+    restart: on-failure
+    ports:
+      - 17301:8786
+    stop_grace_period: 3s
+    mem_limit: 256M
+    memswap_limit: 256M
+    pids_limit: 1024

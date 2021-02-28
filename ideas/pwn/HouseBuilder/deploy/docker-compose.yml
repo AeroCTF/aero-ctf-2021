@@ -1,0 +1,17 @@
+version: '2.3'
+
+services:
+
+  task:
+    container_name: HouseBuilder
+    image: HouseBuilder_image
+
+    build: service
+    restart: always
+    ports:
+      - 17174:31337
+    pids_limit: 128
+    mem_limit: 128M
+    privileged: true
+    volumes:
+      - ./service/nsjail/logs/:/var/log/nsjail/

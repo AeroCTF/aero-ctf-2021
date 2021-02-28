@@ -1,0 +1,36 @@
+[I][2021-02-26T22:37:41+0000] Mode: LISTEN_TCP
+[I][2021-02-26T22:37:41+0000] Jail parameters: hostname:'jail', chroot:'/chroot/', process:'/var/task/shmstr', bind:[::]:31337, max_conns_per_ip:0, time_limit:30, personality:0, daemonize:false, clone_newnet:false, clone_newuser:true, clone_newns:true, clone_newpid:true, clone_newipc:true, clone_newuts:true, clone_newcgroup:true, keep_caps:false, disable_no_new_privs:false, max_cpus:0
+[I][2021-02-26T22:37:41+0000] Mount: '/chroot/' -> '/' flags:MS_RDONLY|MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+[I][2021-02-26T22:37:41+0000] Mount: '/proc' flags:MS_RDONLY type:'proc' options:'' dir:true
+[I][2021-02-26T22:37:41+0000] Uid map: inside_uid:65534 outside_uid:0 count:1 newuidmap:false
+[W][2021-02-26T22:37:42+0000][10] void cmdline::logParams(nsjconf_t*)():254 Process will be UID/EUID=0 in the global user namespace, and will have user root-level access to files
+[I][2021-02-26T22:37:42+0000] Gid map: inside_gid:65534 outside_gid:0 count:1 newgidmap:false
+[W][2021-02-26T22:37:42+0000][10] void cmdline::logParams(nsjconf_t*)():264 Process will be GID/EGID=0 in the global user namespace, and will have group root-level access to files
+[I][2021-02-26T22:37:42+0000] Listening on [::]:31337
+[I][2021-02-26T22:37:54+0000] New connection from: [::ffff:172.18.0.1]:45446 on: [::ffff:172.18.0.2]:31337
+[I][2021-02-26T22:37:54+0000] Executing '/var/task/shmstr' for '[::ffff:172.18.0.1]:45446'
+[E][2021-02-26T22:37:54+0000][1] void subproc::subprocNewProc(nsjconf_t*, int, int, int, int)():200 execve('/var/task/shmstr') failed: No such file or directory
+[F][2021-02-26T22:37:54+0000][1] bool subproc::runChild(nsjconf_t*, int, int, int)():449 Launching child process failed
+[W][2021-02-26T22:37:54+0000][10] bool subproc::runChild(nsjconf_t*, int, int, int)():479 Received error message from the child process before it has been executed
+[I][2021-02-26T22:37:54+0000] pid=11 ([::ffff:172.18.0.1]:45446) exited with status: 255, (PIDs left: 0)
+[I][2021-02-26T22:49:27+0000] Mode: LISTEN_TCP
+[I][2021-02-26T22:49:27+0000] Jail parameters: hostname:'jail', chroot:'/chroot/', process:'/var/task/shmstr', bind:[::]:31337, max_conns_per_ip:0, time_limit:30, personality:0, daemonize:false, clone_newnet:false, clone_newuser:true, clone_newns:true, clone_newpid:true, clone_newipc:true, clone_newuts:true, clone_newcgroup:true, keep_caps:false, disable_no_new_privs:false, max_cpus:0
+[I][2021-02-26T22:49:27+0000] Mount: '/chroot/' -> '/' flags:MS_RDONLY|MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+[I][2021-02-26T22:49:27+0000] Mount: '/proc' flags:MS_RDONLY type:'proc' options:'' dir:true
+[I][2021-02-26T22:49:27+0000] Uid map: inside_uid:65534 outside_uid:0 count:1 newuidmap:false
+[W][2021-02-26T22:49:27+0000][10] void cmdline::logParams(nsjconf_t*)():254 Process will be UID/EUID=0 in the global user namespace, and will have user root-level access to files
+[I][2021-02-26T22:49:27+0000] Gid map: inside_gid:65534 outside_gid:0 count:1 newgidmap:false
+[W][2021-02-26T22:49:27+0000][10] void cmdline::logParams(nsjconf_t*)():264 Process will be GID/EGID=0 in the global user namespace, and will have group root-level access to files
+[I][2021-02-26T22:49:27+0000] Listening on [::]:31337
+[I][2021-02-26T22:51:38+0000] Mode: LISTEN_TCP
+[I][2021-02-26T22:51:38+0000] Jail parameters: hostname:'jail', chroot:'/chroot/', process:'/var/task/shmstr', bind:[::]:31337, max_conns_per_ip:0, time_limit:30, personality:0, daemonize:false, clone_newnet:false, clone_newuser:true, clone_newns:true, clone_newpid:true, clone_newipc:true, clone_newuts:true, clone_newcgroup:true, keep_caps:false, disable_no_new_privs:false, max_cpus:0
+[I][2021-02-26T22:51:38+0000] Mount: '/chroot/' -> '/' flags:MS_RDONLY|MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+[I][2021-02-26T22:51:38+0000] Mount: '/proc' flags:MS_RDONLY type:'proc' options:'' dir:true
+[I][2021-02-26T22:51:38+0000] Uid map: inside_uid:65534 outside_uid:0 count:1 newuidmap:false
+[W][2021-02-26T22:51:38+0000][10] void cmdline::logParams(nsjconf_t*)():254 Process will be UID/EUID=0 in the global user namespace, and will have user root-level access to files
+[I][2021-02-26T22:51:38+0000] Gid map: inside_gid:65534 outside_gid:0 count:1 newgidmap:false
+[W][2021-02-26T22:51:38+0000][10] void cmdline::logParams(nsjconf_t*)():264 Process will be GID/EGID=0 in the global user namespace, and will have group root-level access to files
+[I][2021-02-26T22:51:38+0000] Listening on [::]:31337
+[I][2021-02-26T22:51:45+0000] New connection from: [::ffff:172.18.0.1]:45466 on: [::ffff:172.18.0.2]:31337
+[I][2021-02-26T22:51:45+0000] Executing '/var/task/shmstr' for '[::ffff:172.18.0.1]:45466'
+[I][2021-02-26T22:51:46+0000] pid=11 ([::ffff:172.18.0.1]:45466) exited with status: 0, (PIDs left: 0)
