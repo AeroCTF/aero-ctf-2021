@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\pr1\MyProject.mcppi
+Project1=dumper.mcppi
+[ActiveProject]
+Index=1

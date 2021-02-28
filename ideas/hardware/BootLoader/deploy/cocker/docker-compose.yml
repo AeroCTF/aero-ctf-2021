@@ -1,0 +1,12 @@
+version: '2.4' 
+
+services:
+  bootloader:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+     - 8686:8686
+    restart: on-failure
+    pids_limit: 256
+    mem_limit: 500M

@@ -1,0 +1,12 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F452 -C -Y -DL -O11111100 -fo8 -N"C:\Users\anon\Documents\MikroC\DumperExample\dumper.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" -SP"C:\Users\anon\Documents\MikroC\DumperExample\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" "dumper.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_UART_c67.mcl"	 
+hint: 0	1139	Available RAM: 1515 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	dumper.c
+warning: 7	1509	Generated baud rate is 9615 bps (error = 0.16 percent)	dumper.c
+diagnostics: 20	123	Compiled Successfully	dumper.c
+diagnostics: 0	127	All files Compiled in 63 ms	 
+hint: 0	1144	Used RAM (bytes): 22 (1%)  Free RAM (bytes): 1493 (99%)	Used RAM (bytes): 22 (1%)  Free RAM (bytes): 1493 (99%)
+hint: 0	1144	Used ROM (bytes): 258 (1%)  Free ROM (bytes): 32510 (99%)	Used ROM (bytes): 258 (1%)  Free ROM (bytes): 32510 (99%)
+diagnostics: 0	125	Project Linked Successfully	dumper.mcppi
+diagnostics: 0	128	Linked in 31 ms	 
+diagnostics: 0	129	Project 'dumper.mcppi' completed: 109 ms	 
+diagnostics: 0	103	Finished successfully: 15 Feb 2021, 18:56:23	dumper.mcppi

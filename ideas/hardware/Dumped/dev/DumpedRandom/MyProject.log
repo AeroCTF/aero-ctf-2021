@@ -1,0 +1,16 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F452 -C -Y -DL -O11111100 -fo8 -N"C:\Users\anon\Documents\MikroC\DumpedRandom\MyProject.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" -SP"C:\Users\anon\Documents\MikroC\DumpedRandom\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" "MyProject.c" "lcd.c" "atraso.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_Conversions.mcl" "__Lib_ADC_A_C.mcl" "__Lib_UART_c67.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl"	 
+hint: 0	1139	Available RAM: 1515 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	MyProject.c
+warning: 2	1509	Generated baud rate is 9615 bps (error = 0.16 percent)	MyProject.c
+diagnostics: 214	123	Compiled Successfully	MyProject.c
+diagnostics: 0	122	Compilation Started	lcd.h
+diagnostics: 84	123	Compiled Successfully	lcd.c
+diagnostics: 0	122	Compilation Started	atraso.c
+diagnostics: 50	123	Compiled Successfully	atraso.c
+diagnostics: 0	127	All files Compiled in 188 ms	 
+hint: 0	1144	Used RAM (bytes): 140 (9%)  Free RAM (bytes): 1375 (91%)	Used RAM (bytes): 140 (9%)  Free RAM (bytes): 1375 (91%)
+hint: 0	1144	Used ROM (bytes): 3572 (11%)  Free ROM (bytes): 29196 (89%)	Used ROM (bytes): 3572 (11%)  Free ROM (bytes): 29196 (89%)
+diagnostics: 0	125	Project Linked Successfully	MyProject.mcppi
+diagnostics: 0	128	Linked in 47 ms	 
+diagnostics: 0	129	Project 'MyProject.mcppi' completed: 250 ms	 
+diagnostics: 0	103	Finished successfully: 25 Feb 2021, 22:58:35	MyProject.mcppi
