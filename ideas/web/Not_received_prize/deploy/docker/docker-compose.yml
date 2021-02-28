@@ -1,0 +1,92 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx:1.17-alpine
+
+    ports:
+      - "13666:80"
+
+    volumes:
+      - ../web/:/var/www/html/web:ro
+      - ./nginx/conf.d/:/etc/nginx/conf.d:ro
+
+    links:
+      - "backend"
+
+    depends_on:
+      - backend
+
+
+  backend:
+    build:
+      context: ../
+      dockerfile: ./docker/backend.dockerfile
+
+    volumes:
+      - ../backend:/app:ro
+
+    env_file:
+      - .env
+
+    depends_on:
+      - pgsql
+      - redis
+
+    links:
+      - pgsql
+      - redis:redis
+
+
+  pgsql:
+    image: postgres:12-alpine
+    restart: always
+
+    #Убрать при деплое
+    #ports:
+    #  - "54322:5432"
+
+    volumes:
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
+      #Убрать при деплое
+      - ./pgdata:/var/lib/postgresql/data:rw
+
+    env_file:
+      - .env
+
+
+  check:
+    build:
+      context: ../
+      dockerfile: ./docker/check.dockerfile
+
+    volumes:
+      - ../check:/app:ro
+
+    links:
+      - nginx:ng
+      - redis:redis
+
+    depends_on:
+      - nginx
+      - redis
+
+    env_file:
+      - .env
+
+  redis:
+    image: redis:5-alpine
+
+  #flower:  
+  #  image: mher/flower
+    
+  #  environment:
+  #    - CELERY_BROKER_URL=redis://redis:6379/0
+  #    - FLOWER_PORT=8888
+
+  #  ports:  
+  #    - 8888:8888
+
+  #  links:
+  #    - redis:redis
+
