@@ -30,8 +30,8 @@
     6. Since I will give you the SID of the machine from which the flag was stolen, you can find out the name of the directory on the server where it is located. 
     7. After you know the name of the directory, you need to use the read command (it was the only one that was not presented in the script) and read the file by traversing the directory. 
 
+An example of fuzzing commands, as well as getting a file with a flag, is presented in the [script](solve/fuzz_cmds.py)
 
-    An example of fuzzing commands, as well as getting a file with a flag, is presented in the [script](solve/fuzz_cmds.py)
 ### Flag
 
 `Aero{6ee721d4dd05bf9df25f1fced831b4e0}`
