@@ -38,7 +38,7 @@
     8. Reverse logic of key generation algo for file encryption
     9. Decrypt file
 
-   [solution with pictures](solve/solution.pdf)
+   Full writeup: TBD
 ### Flag
 
 `Aero{cl4ss1c_n0t_p0pul4r_3ncrypt10n_4lg0r1thm_ac87740a2ad79da5dfcc41f0ae372736}`
