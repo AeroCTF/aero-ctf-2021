@@ -15,7 +15,7 @@
     which will dump CODE memory of the microcontroller. 
     
 ### Solution
-    Dumper example in deploy/solve
+    Dumper and Loader example in solve
 
 ### Flag
 `Aero{Y0u_c4N_dmp_1t}`
