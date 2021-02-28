@@ -46,6 +46,11 @@
     12. decode flag
 
     Full Writeup: TBD
+    
+### Links
+- [dissector](https://github.com/Lekensteyn/kdnet)
+- [luagcrypt](https://github.com/Lekensteyn/luagcrypt)
+
 ### Flag
 
 `Aero{f7301b4efb72fc507c5a9a0053077de1}`
