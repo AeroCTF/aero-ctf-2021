@@ -1,0 +1,15 @@
+luagcrypt.so
+*.o
+.*.sw?
+
+# gcov
+*.gcda
+*.gcno
+*.gcov
+
+# luacov
+luacov.stats.out
+luacov.report.out
+
+# luarocks
+*.rock
