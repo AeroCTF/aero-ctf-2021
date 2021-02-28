@@ -1,0 +1,12 @@
+version: '2.3'
+
+services:
+  i18n:
+    container_name: aeroctf_i18n
+    image: aeroctf/i18n
+    build: .
+    restart: always
+    ports:
+      - 7878:8080
+    pids_limit: 128
+    mem_limit: 512M
