@@ -12,7 +12,7 @@ which was encrypted, and nothing else.
 
 If we want to decrypt the traffic, there is a public dissector that
 supports decryption -
-[[https://github.com/Lekensteyn/kdnet]{.ul}](https://github.com/Lekensteyn/kdnet).
+[https://github.com/Lekensteyn/kdnet](https://github.com/Lekensteyn/kdnet).
 But first we need to find a key. At this point, we need to analyze the
 dump in order to understand which key was used.
 
@@ -60,7 +60,7 @@ At this stage, we no longer need a RAM dump and we need to use the key
 we got, but first, convert it from bytes to the correct format (although
 you can probably use the converted key immediately). As an option, you
 can use this tool for conversion -
-[[http://extraconversion.com/base-number/base-36]{.ul}](http://extraconversion.com/base-number/base-36).
+[http://extraconversion.com/base-number/base-36](http://extraconversion.com/base-number/base-36).
 Finally we get the following key: 17890.af3489a.9345kjm.lio147.
 
 Now we need to decrypt the traffic using the dissector that was
@@ -68,7 +68,7 @@ mentioned above.
 
 In order for the dissector to work correctly, you need to install an
 additional library, also provided by the author of the dissector -
-[[https://github.com/Lekensteyn/luagcrypt]{.ul}](https://github.com/Lekensteyn/luagcrypt).
+[https://github.com/Lekensteyn/luagcrypt](https://github.com/Lekensteyn/luagcrypt).
 The building instruction is contained in the project itself, so I
 managed to build it without any problems.
 
